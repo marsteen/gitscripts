@@ -1,3 +1,9 @@
 #!/bin/sh
 #
-git commit -a -F commit-message.txt
+if [ -z "$1" ]
+then
+echo "usage: git-commit <message>"
+else
+git commit -a -m "$1"
+fi
+
