@@ -2,4 +2,4 @@
 #
 # Delete branch on server (origin)
 #
-git push origin --delete [Branch]
+git push origin --delete $1 
