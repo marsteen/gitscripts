@@ -23,8 +23,8 @@ git switch $branchname
 # branch auf develop rebasen
 #
 
-git rebase develop
-#git rebase --strategy-option theirs develop
+#git rebase develop
+git rebase --strategy-option ours develop
 
 #
 # branch "force-pushen"

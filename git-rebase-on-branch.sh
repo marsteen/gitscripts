@@ -10,7 +10,7 @@ branchname=$(git rev-parse --abbrev-ref HEAD)
 # develop branch updaten
 #
 
-git switch develop
+git switch $1 
 git pull
 
 #
@@ -23,7 +23,7 @@ git switch $branchname
 # branch auf develop rebasen
 #
 
-git rebase develop
+git rebase $1 
 #git rebase --strategy-option theirs develop
 
 #
