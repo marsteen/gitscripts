@@ -1,3 +1,3 @@
 #!/bin/sh
-ls /usr/local/bin/git-*.sh
-
+thispath=$(dirname "$0")
+ls $thispath/*.sh
